@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="{{configuration param="charset"}}">
+  <meta name="keywords" content="{{configuration param="meta_keywords"}}">
+  <meta name="description" content="{{configuration param="meta_description"}}">
+  <title>{{configuration param="wakka_name"}} : {{currentpage}}</title>
+  {{linkstyle}}
+  {{linkrss}}
+</head>
+
+<body {{parambody}}>
+  <section id="main">
+    <article id="page" {{doubleclic}}>
+      {WIKINI_PAGE}
+      {{barreredaction}}
+    </article>
+    <nav id="navleft">
+      {{include page="pageMenuGauche" doubleclic="0"}}
+    </nav>
+  </section>
+
+  <header id="header">
+    <a href="./">
+      <img src="themes/perfea/images/header.jpg" alt="Bandeau PerfEA" />
+    </a>
+  </header>
+
+  <nav id="navtop">
+    {{include page="PageMenuHaut" doubleclic="0"}}
+  </nav>
+
+  <footer id="footer">
+    {{include page="PageFooter" class="footerpage" doubleclic="1"}}
+  </footer>
+
+  {{linkjavascript}}
+  </body>
+</html>

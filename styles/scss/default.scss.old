@@ -1,0 +1,330 @@
+html {
+	margin: 0;
+	padding: 0;
+	background: url(../images/background.jpg);
+	background-color: white;
+	background-position:center bottom;
+	background-repeat:no-repeat;
+}
+
+body {
+	width: 968px; /*968 - 2 x 25 padding - 2 x 2 border*/
+	margin: auto;
+	margin-top: 25px;
+	border: 2px solid #B0B68F;
+	padding: 25px;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+	width: 914px;
+	height: 175px;
+}
+
+footer {
+	background: #ABBEA4;
+	width: 914px;
+	color: white;
+	z-index: 5;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+#menugauche {
+	width: 170px;
+	max-width: 170px;
+	height: 100%;
+	margin-right: 25px;
+	margin-top: 25px;
+	float: left;
+	font-size: 18px;
+}
+
+#page {
+	float: left;
+	width: 719px;
+	max-width: 725px;
+	margin-top: 25px;
+	text-align: justify;
+}
+
+#page h1, #page h2, #page h3,
+#page h4,#page h5,#page h6 {text-align: left;}
+
+/****************************************************************************/
+/* Menu déroulant */
+/****************************************************************************/
+#menu {
+	display: block;
+	position: relative;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	width: 914px;
+	z-index: 100;
+	height: 40px;
+	max-height: 40px;
+}
+
+#menu,
+.vertical-dropdown-menu a:hover,
+.vertical-dropdown-menu a.active-link {
+	color: #ffffff;
+	background: #ABBEA4;
+}
+
+#menu li:hover,
+#menu li.active-list,
+.footer a:hover,
+#menu li a:hover {
+	color: gray;
+}
+
+#menu ul {
+	padding:0; margin:0; }
+
+#menu ul:after {
+	content:"."; display:block; height:0; clear:both; visibility:hidden; }
+
+#menu li {
+	position:relative;
+	float:left;
+	list-style-type:none;
+	padding:8px 20px;
+	margin:0;
+	color: #FFFFFF;
+	display:block;
+	*zoom: 1;
+}
+
+#menu .search-query {
+	border-radius: 0;
+}
+
+#menu .btn-perfea {
+	background-image:none;
+	background-color: #cf490a;
+	border-radius: 0;
+}
+
+#menu li a, #menu li a:visited {
+	padding:8px 20px;
+	margin:-8px -20px;
+	text-decoration:none;
+	display:inline-block;
+	color: #ffffff;
+}
+
+#menu li a:hover {
+	color: gray;
+}
+
+#menu > div > ul > li {
+	border-left:1px solid rgba(200, 200, 200, 0.2);
+	border-right:1px solid rgba(100, 100, 100, 0.2);
+}
+
+#menu > div > ul > li:first-child { border-left:none; }
+
+#menu > div > ul > li:last-child { border-right:none; }
+
+#menu ul ul {
+	display:none;
+	width:230px;
+	position:absolute;
+	top:34px;
+	left:0;
+	background-color: #ABBEA4;
+	padding:0; margin:0; z-index:99; border: none;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	z-index:101;
+	zoom: 1;
+}
+
+#menu ul ul li {
+	float:none;
+	border:none;
+}
+
+#menu ul ul a {
+	border:none;
+	float:none;
+	display:block;
+}
+
+#menu ul ul ul {
+	display:none;
+	width:200px;
+	position:absolute;
+	left:229px;
+	top:0;
+	padding:0; margin:0;
+}
+
+#menu ul ul ul ul {left:199px;}
+
+#menu .form-search {margin: 6px; border-radius: 0;}
+
+#menu .search_input {width: 100px; border-radius: 0;}
+
+/****************************************************************************/
+/* Les trucs dans les menus
+*************************************************************/
+div.perfeaInscription {
+	background-color : #CF490B;
+	color: white;
+	padding: 10px;
+	/*border: 1px solid #e89f7e;*/
+	font-size: 20px;
+	/*height: 140px;*/
+	line-height: 25px;
+	width: 150px;
+}
+
+div.perfeaInscription a.btn_inscription {
+	border: 1px solid #e89f7e;
+	background-color: white;
+	color: gray;
+	/*padding: 5px;*/
+	/*margin: auto 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;*/
+	line-height: 30px;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+
+}
+
+div.perfeaInscription a.btn_inscription:hover {
+	text-decoration: none;
+	color: #e89f7e;
+}
+
+.conseiller, .enseignant, .exploitant {
+	color: white;
+	font-size: 20px;
+	width: 160px;
+	line-height: 30px;
+	display: inline-block;
+	border-bottom: solid 2px white;
+	padding-left: 5px;
+}
+
+.conseiller { background-color: #747F5A;}
+.enseignant { background-color: #B0B68F;}
+.exploitant { background-color: #ABBEA4;}
+
+a.conseiller:hover { background-color: #CF490B; color:white; text-decoration: none;}
+a.enseignant:hover { background-color: #CF490B; color:white; text-decoration: none;}
+a.exploitant:hover { background-color: #CF490B; color:white; text-decoration: none;}
+
+/*****************************************************************************
+ ** Pied de page
+ *****************************************************************************/
+
+#footerleft, #footerright, #footercenter {
+ 	width: 251px;
+ 	padding: 25px;
+ 	float: left;
+ 	color: white;
+
+}
+
+#footercenter {margin-left: 4px; margin-right: 4px;}
+/*#footercenter .input-prepend {
+	width: 100%;
+}
+#footercenter .input-medium {
+	width: 100%;
+}*/
+
+#footercenter .mail-submit {
+	background-image: none;
+	background-color: #CF490B;
+	border-radius: 0;
+}
+
+#footercenter .contact-message,
+#footercenter .input-prepend,  {
+	width: 280px;
+}
+
+/*****************************************************************************
+ ** Page
+ ****************************************************************************/
+
+
+
+/*****************************************************************************
+ ** Accueil
+ ****************************************************************************/
+
+ #page_left, #page_right {float: left; width: 347px; max-width: 347px;}
+ #page_left {margin-right: 25px;}
+ #page_left div.list_tags {display: none;}
+
+ .titreFiche {color: #747F5A;}
+ .dateFiche{color:#B0B68F;font-size:9pt;text-align:right;line-height:3pt}
+ .chapeauFiche{color:#000000;font-size:9pt;font-weight:bold}
+ .savoirplusfiche{float: right;}
+
+ /*****************************************************************************
+  ** Liste_perfea
+  ****************************************************************************/
+tr.liste_perfea_tr {
+	vertical-align: top;
+}
+
+table.liste_perfea {
+	width: 100%;
+}
+
+
+p.liste_perfea_titre{
+	font-weight: bold;
+	margin-bottom: 0px;
+
+}
+p.liste_perfea_fonction{
+	/* font-style: italic; retiré à la demande dictatoriale de Marc...)*/
+	margin-bottom: 0px;
+}
+p.liste_perfea_structure{
+	margin: 0;
+}
+img.liste_perfea_avatar{
+	height: 65px;
+	min-width: 65px;
+	width: 65px;
+	padding: 0; margin: 0;
+	padding-right: 10px;
+}
+p.liste_perfea_savoir_plus{
+	/*margin-left: 250px;	*/
+}
+
+td.liste_perfea_col1 {
+	width: 90px;
+	vertical-align: top;
+}
+td.liste_perfea_col2 {
+	width: 100%;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+hr{
+	/*border-color: #CF490B;*/
+	margin:5px 0;
+	border-style: solid none;
+	border-width: 1px;
+}
+
+td.liste_perfea_savoir_plus {
+	text-align: right;
+}

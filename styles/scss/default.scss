@@ -1,0 +1,42 @@
+@import 'vars';
+@import 'text';
+@import 'header';
+@import 'navtop';
+@import 'navleft';
+@import 'footer';
+
+#header {order: 1;}
+#navtop {order: 2;}
+#main {order: 3;}
+#footer {order: 4;}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url(../images/background.jpg) bottom no-repeat;
+  background-size: contain;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  max-width: calc(#{$perfea-navleft-width} + #{$perfea-page-maxwidth} + 2*#{$perfea-padding});
+  margin: $perfea-padding auto 0 auto;
+  padding: $perfea-padding;
+  border: 2px solid $perfea-color-tertiary;
+}
+
+#main {
+  display: flex;
+  flex-flow: row;
+  #navleft {
+    order: 1;
+
+  }
+  #page {
+    order: 2;
+    max-width: $perfea-page-maxwidth;
+  }
+}

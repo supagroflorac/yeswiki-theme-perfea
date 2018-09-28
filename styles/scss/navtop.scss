@@ -1,0 +1,39 @@
+#navtop {
+  background: $perfea-color-quaternary;
+  color: white;
+  margin: $perfea-padding 0;
+  //line-height: calc(2x#{$perfea-padding});
+
+  a {
+    color: white;
+    //padding: calc(#{$perfea-padding} / 2) $perfea-padding ;
+    line-height: calc(2x#{$perfea-padding});
+    font-size: 120%;
+  }
+
+  a:hover, li.open a {
+    background: $perfea-color-secondary;
+  }
+
+  ul.dropdown-menu li a {
+    background: white;
+  }
+
+  li {
+    border-right: 1px solid rgba(100, 100, 100, 0.2);
+  }
+
+
+  li:last-child {
+    border-right: 0;
+  }
+
+  li li a {
+    color: black;
+  }
+
+  li li a:hover {
+    background: $perfea-color-tertiary;
+  }
+
+}
