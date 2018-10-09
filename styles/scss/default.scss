@@ -33,10 +33,10 @@ body {
   flex-flow: row;
   #navleft {
     order: 1;
-
   }
   #page {
     order: 2;
     max-width: $perfea-page-maxwidth;
+    flex: 10;
   }
 }
